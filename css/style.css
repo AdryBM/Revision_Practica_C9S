@@ -1,0 +1,144 @@
+/* PROPIEDADES GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0;
+}
+
+.banner-descuento {
+  background-color: #00b09b;
+  color: black;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.banner-titulo {
+  background-color: #00669f;
+  color: black;
+  padding: 8px 16px;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+  /* Barra fija al hacer scroll */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.banner-titulo h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.contenedor-tarjetas {
+  max-width: 960px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px;
+  /* Espacio arriba para despegar del encabezado */
+  margin-top: 80px;
+  /* Espacio abajo que empuja el footer hacia abajo */
+  margin-bottom: 100px;
+}
+
+.tarjeta-heroe {
+  background-color: #f3f3f3;
+  width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  /* Crea la sombra exterior */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.banner-tarjeta {
+  width: 100%;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imagen-fondo-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.icono-favorito {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 24px;
+  height: 24px;
+  z-index: 10;
+}
+
+.avatar-tarjeta {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: -45px auto 10px auto;
+  border: 3px solid white;
+  position: relative;
+  z-index: 2;
+}
+
+.avatar-tarjeta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Texto interno: arriba, derecha, abajo, izquierda */
+.contenido-tarjeta {
+  padding: 15px 20px 25px 20px;
+}
+
+.contenido-tarjeta h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.contenido-tarjeta p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* Botón "Ver más" */
+.boton-ver-mas {
+  display: inline-block;
+  background-color: #00669f;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.pie {
+  background-color: #00669f;
+  color: white;
+  padding: 4px 16px;
+  font-size: 16px;
+  font-weight: regular;
+  width: 100%;
+  box-sizing: border-box;
+}
